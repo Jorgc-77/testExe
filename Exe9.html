@@ -1,0 +1,38 @@
+<!-- Toggle a specific element using jquery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle a specific element</title>
+    <script src="jquery.min.js"></script>
+</head>
+<style>
+    p{
+        margin-top: 20px;
+        margin-left: 10px;
+        padding: 5px;
+        border: 2px solid #666;
+        height: 200px;
+    }
+
+    span{
+        background-color: black;
+        color: brown;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <p></p>
+
+    <span>Clicked Element</span>
+
+    <script>
+    $(document).ready(function(){
+        $('span').click(function(){
+            $('p').toggle();
+        });
+    });     
+    </script>
+</body>
+</html>

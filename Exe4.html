@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions with arguments</title>
+</head>
+<body>
+	<form name="myform">
+		<label for="first_number">First Number:</label>
+		<input type="number" name="first_number" id="f_num">
+			<br>
+		<label for="second_number">Second Number:</label>
+		<input type="number" name="second_number" id="s_num"> <br>
+
+		<input type="button" value="Calculate" onclick="calculate()"> <br>
+
+		Sum: <input type="number" name="sum" id="sum"><br>
+	</form>
+
+    <script>
+        function calculate() {
+            var num1 = parseInt(document.myform.f_num.value);
+            console.log(num1);
+            var num2 = parseInt(document.myform.s_num.value);
+            console.log(num2);
+            var result = sum(num1,num2);
+            document.getElementById('sum').value = result;
+        }
+
+        function sum(a,b) {
+            return a+b;
+        }
+    </script>
+</body>
+</html>

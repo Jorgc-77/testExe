@@ -1,0 +1,31 @@
+<!-- how to get textarea text using jquery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea text using jquery</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <form method="GET">
+        <textarea id="textarea"></textarea><br><br>
+        <button type="button">Click Here!</button><br><br>
+        <input id="result" type="text" disabled>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+
+                var result = $('#textarea').val();
+                //console.log(result);
+                $('#result').val(result);
+                // var result = document.getElementById("textarea").value;
+                // document.getElementById('result').value = result;
+            })
+        })
+        
+    </script>
+</body>
+</html>

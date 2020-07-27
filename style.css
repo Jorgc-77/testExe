@@ -1,0 +1,74 @@
+body {
+	overflow-y: hidden;
+}
+
+.nav img {
+	width: 160px;
+	height: 60px;
+	float: right;
+}
+
+.search-container {
+	
+}
+
+.search-container input {
+	border: 1px solid black;
+	border-radius: 100px;
+	width: 800px;
+}
+
+.nav1 {
+ 	margin-left: 250px; 
+}
+
+hr.new1 {
+	
+	position: relative;
+	bottom: 30px;
+}
+
+.nav3,
+.nav4 {
+	position: relative;
+	bottom: 40px;
+}
+
+.nav2 {
+	position: relative;
+	bottom: 40px; 
+}
+
+.nav2 .mycard {
+	height: 50px;
+}
+
+.nav2 i {
+	position: fixed;
+	right: 18%;
+	color: black;
+}
+
+.myp1 {
+	position: fixed;
+	right: 20%;
+	bottom: 22%;
+}
+
+.nav4 .myp2,
+.nav5 .myp2 {
+	position: relative;
+	bottom: 10px;
+}
+
+.nav4 .myp3,
+.nav5 .myp3 {
+	position: relative;
+	bottom: 30px;
+}
+
+.nav5 {
+	position: relative;
+	bottom: 85px;
+}
+
